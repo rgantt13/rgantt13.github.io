@@ -1,0 +1,49 @@
+
+
+
+<body ng-controller="bodyCtrl" style="background-color:yellow;">
+
+<script type="text/javascript" src="api.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+
+  <div id="loader">
+    <center>
+      <p>
+      HEADER
+      </p>
+    </center>
+  </div>
+
+  <div class="modal fade" id="key-modal" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Please Enter URL, Username, and Password</h4>
+        </div>
+        <div class="modal-body">
+          <p>URL:</p>
+          <input type="text" class="form-control" id="instance" style="width:100%">
+          <p>Username:</p>
+          <input type="text" class="form-control" id="user-enter" style="width:100%">
+          <p>Password:</p>
+          <input type="text" class="form-control" id="key-enter" style="width:100%">
+        </div>
+        <div id="invalid-key" class="hidden" style="color: red;">
+          Invalid Username and Password or URL.
+          <br>Please check both and try again.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" onclick="window.close()">Exit</button>
+          <button type="Submit" class="btn btn-primary" onclick="sendKey()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <p>TEST THIS!</p>
+  </div>
+
+  </body>
